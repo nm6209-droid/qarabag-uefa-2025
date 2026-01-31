@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qarabag FC – UEFA 2025/26</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Qarabag FC in UEFA 2025/26</h1>
+      <p class="subtitle">Representing Azerbaijan on the European stage</p>
+
+      <div class="image-frame">
+        <img src="images/hero.png" alt="Qarabag FC Team">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="container">
+      <h2>About Qarabag FC</h2>
+      <p>
+        Qarabag FC is the most successful football club in Azerbaijan.
+        Founded in 1951, the club is known for tactical discipline,
+        modern football philosophy, and strong European experience.
+      </p>
+    </div>
+  </section>
+
+  <!-- UEFA -->
+  <section class="dark-section">
+    <div class="container">
+      <h2>UEFA Season 2025/26</h2>
+      <p>
+        The 2025/26 UEFA season is another important challenge for Qarabag FC.
+        The team aims to compete with confidence and represent Azerbaijani football
+        with pride on the European stage.
+      </p>
+
+      <div class="image-frame">
+        <img src="images/match.png" alt="Qarabag FC UEFA Match">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section>
+    <div class="container">
+      <h2>Team Identity</h2>
+      <p>
+        Qarabag FC combines experienced international players with talented
+        local footballers, focusing on possession-based football and
+        disciplined defending.
+      </p>
+    </div>
+  </section>
+
+  <!-- GOALS -->
+  <section class="dark-section">
+    <div class="container">
+      <h2>Club Ambitions</h2>
+      <p>
+        The club’s objectives include progressing in UEFA competitions,
+        strengthening its European reputation, and developing young talent.
+      </p>
+    </div>
+  </section>
+
+<!-- AD BANNER -->
+<section class="ad-banner" id="adBanner">
+  <div class="container ad-content">
+
+    <button class="ad-close" id="adClose">✕</button>
+
+    <div class="ad-text">
+      <h3>Official Partner</h3>
+      <p>Support Qarabag FC in the UEFA 2025/26 season</p>
+      <a href="#" class="ad-btn" target="_blank" rel="noopener">Visit Sponsor</a>
+    </div>
+
+    <div class="ad-image">
+      <!-- Google Ads / Image banner -->
+      <img src="images/ad-banner.jpg" alt="Advertisement">
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+  © 2025 Qarabag FC – UEFA Season Overview<br>
+  <a href="about.html">About</a> |
+  <a href="privacy.html">Privacy Policy</a> |
+  <a href="terms.html">Terms of Service</a>
+</footer>
+
+
+<script>
+  const banner = document.getElementById('adBanner');
+  const closeBtn = document.getElementById('adClose');
+
+  const STORAGE_KEY = 'qarabag_ad_last_shown';
+  const SHOW_INTERVAL = 24 * 60 * 60 * 1000; // 24 hours
+
+  const lastShown = localStorage.getItem(STORAGE_KEY);
+  const now = Date.now();
+
+  if (!lastShown || now - lastShown > SHOW_INTERVAL) {
+    banner.style.display = 'block';
+    localStorage.setItem(STORAGE_KEY, now);
+  } else {
+    banner.style.display = 'none';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
+    localStorage.setItem(STORAGE_KEY, now);
+  });
+</script>
+
+
+
+  <!-- COOKIE NOTICE -->
+  <div class="cookie-notice" id="cookieNotice">
+    <p>
+      This website uses cookies to improve user experience and display
+      personalized advertisements.
+    </p>
+    <button id="cookieAccept">Accept</button>
+  </div>
+
+  <!-- COOKIE SCRIPT -->
+  <script>
+    const cookieNotice = document.getElementById('cookieNotice');
+    const cookieAccept = document.getElementById('cookieAccept');
+
+    if (!localStorage.getItem('cookieAccepted')) {
+      cookieNotice.style.display = 'block';
+    }
+
+    cookieAccept.addEventListener('click', () => {
+      localStorage.setItem('cookieAccepted', 'true');
+      cookieNotice.style.display = 'none';
+    });
+  </script>
+
+
+</body>
+</html>
