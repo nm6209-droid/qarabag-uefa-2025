@@ -2,23 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://nm6209-droid.github.io/qarabag-uefa-2025/</loc>
+    <loc>https://nm6209-droid.github.io/</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://nm6209-droid.github.io/qarabag-uefa-2025/about.html</loc>
+    <loc>https://nm6209-droid.github.io/news.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://nm6209-droid.github.io/qarabag-uefa-2025/privacy.html</loc>
+    <loc>https://nm6209-droid.github.io/analysis.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nm6209-droid.github.io/about.html</loc>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://nm6209-droid.github.io/qarabag-uefa-2025/terms.html</loc>
-    <priority>0.6</priority>
+    <loc>https://nm6209-droid.github.io/privacy.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://nm6209-droid.github.io/terms.html</loc>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
+
